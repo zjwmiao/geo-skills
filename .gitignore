@@ -1,0 +1,27 @@
+# Dependencies
+node_modules
+
+# Testing
+/coverage
+
+# Claude Code — 排除本地设置和已安装的 skill 文件（类似 node_modules）
+# skills-lock.json 和 .claude/commands/ 应提交，以便团队共享环境
+.claude/settings.local.json
+.claude/skills/
+.agents/
+
+# Production
+/build
+.env
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# OS and Editor files
+.DS_Store
+.idea
+.vscode
+
+crawled
+reports
